@@ -49,7 +49,7 @@ What's New
 ++++++++++
 
 - Workshop updated for the following software versions:
-    - AOS & PC 5.11.2.x
+    - AOS & PC 5.16.2.x
 
 - Optional Lab Updates:
 
@@ -88,20 +88,14 @@ Networking
 Hosted POC clusters follow a standard naming convention:
 
 - **Cluster Name** - POC\ *XYZ*
-- **Subnet** - 10.**21**.\ *XYZ*\ .0
-- **Cluster IP** - 10.**21**.\ *XYZ*\ .37
-
-If provisioned from the marketing pool:
-
-- **Cluster Name** - MKT\ *XYZ*
-- **Subnet** - 10.**20**.\ *XYZ*\ .0
-- **Cluster IP** - 10.**20**.\ *XYZ*\ .37
+- **Subnet** - 10.**42**.\ *XYZ*\ .0
+- **Cluster IP** - 10.**42**.\ *XYZ*\ .37
 
 For example:
 
 - **Cluster Name** - POC055
-- **Subnet** - 10.21.55.0
-- **Cluster IP** - 10.21.55.37
+- **Subnet** - 10.42.55.0
+- **Cluster IP** - 10.42.55.37
 
 Throughout the Workshop there are multiple instances where you will need to substitute *XYZ* with the correct octet for your subnet, for example:
 
@@ -111,11 +105,11 @@ Throughout the Workshop there are multiple instances where you will need to subs
 
    * - IP Address
      - Description
-   * - 10.21.\ *XYZ*\ .37
+   * - 10.42.\ *XYZ*\ .37
      - Nutanix Cluster Virtual IP
-   * - 10.21.\ *XYZ*\ .39
+   * - 10.42.\ *XYZ*\ .39
      - **PC** VM IP, Prism Central
-   * - 10.21.\ *XYZ*\ .40
+   * - 10.42.\ *XYZ*\ .40
      - **DC** VM IP, NTNXLAB.local Domain Controller
 
 Each cluster is configured with 2 VLANs which can be used for VMs:
@@ -129,13 +123,13 @@ Each cluster is configured with 2 VLANs which can be used for VMs:
     - VLAN
     - DHCP Scope
   * - Primary
-    - 10.21.\ *XYZ*\ .1/25
+    - 10.42.\ *XYZ*\ .1/25
     - 0
-    - 10.21.\ *XYZ*\ .50-10.21.\ *XYZ*\ .124
+    - 10.42.\ *XYZ*\ .50-10.21.\ *XYZ*\ .124
   * - Secondary
-    - 10.21.\ *XYZ*\ .129/25
+    - 10.42.\ *XYZ*\ .129/25
     - *XYZ1*
-    - 10.21.\ *XYZ*\ .132-10.21.\ *XYZ*\ .253
+    - 10.42.\ *XYZ*\ .132-10.21.\ *XYZ*\ .253
 
 Credentials
 ...........
@@ -153,23 +147,23 @@ Credentials
      - Password
    * - Prism Element
      - admin
-     - *<Cluster Password>*
+     - customerSE/4u
    * - Prism Central
      - admin
-     - *<Cluster Password>*
+     - customerSE/4u
    * - Controller VM
      - nutanix
-     - *<Cluster Password>*
+     - customerSE/4u
    * - Prism Central VM
      - nutanix
-     - *<Cluster Password>*
+     - customerSE/4u
 
 Each cluster has a dedicated domain controller VM, **DC**, responsible for providing AD services for the **NTNXLAB.local** domain. The domain is populated with the following Users and Groups:
 
 .. list-table::
    :widths: 25 35 40
    :header-rows: 1
-   
+
    * - Group
      - Username(s)
      - Password
@@ -200,22 +194,23 @@ Access Instructions
 
 The Nutanix Hosted POC environment can be accessed a number of different ways:
 
+Labs: POC221, POC176, POC204, POC215
+
 Lab Access User Credentials
 ...........................
 
 PHX Based Clusters:
-**Username:** PHX-POCxxx-User01 (up to PHX-POCxxx-User20), **Password:** *<Provided by Instructor>*
+**Username:** PHX-POCxxx-User01 (up to PHX-POCxxx-User20), **Password:** customerSE/4u
 
-RTP Based Clusters:
-**Username:** RTP-POCxxx-User01 (up to RTP-POCxxx-User20), **Password:** *<Provided by Instructor>*
 
 Frame VDI
 .........
 
 Login to: https://frame.nutanix.com/x/labs
 
-**Nutanix Employees** - Use your **NUTANIXDC** credentials
-**Non-Employees** - Use **Lab Access User** Credentials
+
+**Login:** PHX-POCxxx-User01@nutanixdc.local (up to PHX-POCxxx-User20), **Password:** *<Provided by Instructor>*
+
 
 Parallels VDI
 .................
@@ -227,38 +222,10 @@ RTP Based Clusters Login to: https://xld-useast1.nutanix.com
 **Nutanix Employees** - Use your **NUTANIXDC** credentials
 **Non-Employees** - Use **Lab Access User** Credentials
 
-Employee Pulse Secure VPN
-..........................
-
-Download the client:
-
-PHX Based Clusters Login to: https://xld-uswest1.nutanix.com
-
-RTP Based Clusters Login to: https://xld-useast1.nutanix.com
-
-**Nutanix Employees** - Use your **NUTANIXDC** credentials
-**Non-Employees** - Use **Lab Access User** Credentials
-
-Install the client.
-
-In Pulse Secure Client, **Add** a connection:
-
-For PHX:
-
-- **Type** - Policy Secure (UAC) or Connection Server
-- **Name** - X-Labs - PHX
-- **Server URL** - xlv-uswest1.nutanix.com
-
-For RTP:
-
-- **Type** - Policy Secure (UAC) or Connection Server
-- **Name** - X-Labs - RTP
-- **Server URL** - xlv-useast1.nutanix.com
-
 
 Nutanix Version Info
 ++++++++++++++++++++
 
 - **AHV Version** - AHV 20170830.337
-- **AOS Version** - 5.11.2.3
-- **PC Version** - 5.11.2.1
+- **AOS Version** - 5.16.1.x
+- **PC Version** - 5.16.1.x

@@ -340,7 +340,6 @@ Creating the Export
    - **Max Size (Optional)** - Leave blank
    - **Select Protocol** - NFS
 
-   .. figure:: images/24.png
 
 #. Click **Next**.
 
@@ -351,9 +350,8 @@ Creating the Export
    - **Authentication** - System
    - **Default Access (For All Clients)** - No Access
    - Select **+ Add exceptions**
-   - **Clients with Read-Write Access** - *The first 3 octets of your cluster network*\ .* (e.g. 10.38.1.\*)
+   - **Clients with Read-Write Access** - *The first 3 octets of your cluster network*\ .* (e.g. 10.42.100.\*)
 
-   .. figure:: images/25.png
 
    By default an NFS export will allow read/write access to any host that mounts the export, but this can be restricted to specific IPs or IP ranges.
 
