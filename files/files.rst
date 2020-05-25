@@ -432,7 +432,7 @@ You will first provision a CentOS VM to use as a client for your Files export.
 
    Note that the utilization data is updated every 10 minutes.
 
-Multi-Protocol Shares
+Multi-Protocol Shares - Optional
 +++++++++++++++++++++
 
 Files provides the ability to provision both SMB shares and NFS exports separately - but also now supports the ability to provide multi-protocol access to the same share. In the exercise below, you will configure your existing *Initials*\ **-FiestaShare** to allow NFS access, allowing developer users to re-direct application logs to this location.
