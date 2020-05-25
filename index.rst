@@ -58,14 +58,16 @@ Agenda
 ++++++
 
 Morning Session:
-- Introductions
-- Nutanix Presentation
-- A Day in the Life
-- Prism Ops
+
+- **Introductions
+- **Nutanix Presentation
+- **A Day in the Life
+- **Prism Ops
 
 Afternoon Session:
-- Files
-- Flow
+
+- **Files
+- **Flow
 
 Introductions
 +++++++++++++
