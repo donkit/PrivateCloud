@@ -57,11 +57,13 @@ What's New
 Agenda
 ++++++
 
+Morning Session:
 - Introductions
 - Nutanix Presentation
 - A Day in the Life
 - Prism Ops
-- Platform Security
+
+Afternoon Session:
 - Files
 - Flow
 
