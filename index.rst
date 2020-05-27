@@ -30,14 +30,14 @@
   tools_vms/linux_tools_vm
   appendix/glossary
 
-  .. toctree::
-    :maxdepth: 2
-    :caption: Appendix
-    :name: _appendix
-    :hidden:
+.. toctree::
+  :maxdepth: 2
+  :caption: Optional
+  :name: _pismops
+  :hidden:
 
-    prismops/prismops_rightsize_lab/prismops_rightsize_lab
-    security/security
+  prismops/prismops_rightsize_lab/prismops_rightsize_lab
+  prismops/security
 
 
 .. _getting_started:
