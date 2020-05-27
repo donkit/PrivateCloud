@@ -8,17 +8,15 @@
 
    dayinlife/dayinlife
    prismops/prismops_capacity_lab/prismops_capacity_lab
-   prismops/prismops_rightsize_lab/prismops_rightsize_lab
-   security/security
    files/files
    flow_secure_fiesta/flow_secure_fiesta
-..   beam_cost_governance/beam_cost_governance
 
 .. toctree::
   :maxdepth: 2
   :caption: Optional Labs
   :name: _optional_labs
-  :hidden:
+  prismops/prismops_rightsize_lab/prismops_rightsize_lab
+  security/security
 
   image_create/image_create
 .. lab_image_configuration/lab_image_configuration
@@ -32,6 +30,8 @@
   tools_vms/windows_tools_vm
   tools_vms/linux_tools_vm
   appendix/glossary
+
+
 
 .. _getting_started:
 
@@ -59,14 +59,15 @@ Agenda
 
 Morning Session:
 
-- Introductions
-- A Day in the Life
-- Prism Ops
+- Presentations
+- Lab A: A Day in the Life
+- Lab B: Prism Pro Capacity Runway
 
 Afternoon Session:
 
-- Files
-- Flow
+- Presentations
+- Lab C: Consolidating Storage with Files
+- Lab D: Securing Applications with Flow
 
 Introductions
 +++++++++++++
@@ -96,9 +97,9 @@ Hosted POC clusters follow a standard naming convention:
 
 For example:
 
-- **Cluster Name** - POC055
-- **Subnet** - 10.38.55.0
-- **Cluster IP** - 10.38.55.37
+- **Cluster Name** - POC208
+- **Subnet** - 10.38.208.0
+- **Cluster IP** - 10.38.208.37
 
 Throughout the Workshop there are multiple instances where you will need to substitute *XYZ* with the correct octet for your subnet, for example:
 
