@@ -15,8 +15,7 @@
   :maxdepth: 2
   :caption: Optional Labs
   :name: _optional_labs
-  prismops/prismops_rightsize_lab/prismops_rightsize_lab
-  security/security
+
 
   image_create/image_create
 .. lab_image_configuration/lab_image_configuration
@@ -31,6 +30,14 @@
   tools_vms/linux_tools_vm
   appendix/glossary
 
+  .. toctree::
+    :maxdepth: 2
+    :caption: Appendix
+    :name: _appendix
+    :hidden:
+
+    prismops/prismops_rightsize_lab/prismops_rightsize_lab
+    security/security
 
 
 .. _getting_started:
