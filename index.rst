@@ -37,7 +37,7 @@
   :hidden:
 
   prismops/prismops_rightsize_lab/prismops_rightsize_lab
-  prismops/security
+  security/security
 
 
 .. _getting_started:
